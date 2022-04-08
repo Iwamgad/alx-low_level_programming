@@ -22,19 +22,21 @@ for (digit4 = 0; digit4 <= 9; digit4++)
 {
 dig1 = (10 * digit1) + digit2;
 dig2 = (10 * digit3) + digit4;
-if (dig1 < dig2)
+if (dig1 >=  dig2)
 {
+continue;
+}
 putchar(digit1 + 48);
 putchar(digit2 + 48);
 putchar(' ');
 putchar(digit3 + 48);
 putchar(digit4 + 48);
-if (digit1 != 9 || digit2 != 8 || digit3 != 9 || digit4 != 9)
+if (digit1 == 9 && digit2 == 8 && digit3 == 9 && digit4 == 9)
 {
+break;
+}
 putchar(',');
 putchar(' ');
-}
-}
 }
 }
 }

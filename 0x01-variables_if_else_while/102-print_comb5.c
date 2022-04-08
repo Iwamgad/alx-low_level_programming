@@ -29,7 +29,7 @@ putchar(digit2 + 48);
 putchar(' ');
 putchar(digit3 + 48);
 putchar(digit4 + 48);
-if (digit1 != 7 || digit2 != 8 || digit3 != 9 || digit4 != 9)
+if (digit1 != 9 || digit2 != 8 || digit3 != 9 || digit4 != 9)
 {
 putchar(',');
 putchar(' ');

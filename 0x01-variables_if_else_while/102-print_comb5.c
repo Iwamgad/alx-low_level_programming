@@ -18,7 +18,7 @@ for (digit2 = 0; digit2 < 9; digit2++)
 {
 for (digit3 = 0; digit3 <= 9; digit3++)
 {
-for (digit4 = 1; digit4 <= 9; digit4++)
+for (digit4 = 0; digit4 <= 9; digit4++)
 {
 dig1 = (10 * digit1) + digit2;
 dig2 = (10 * digit3) + digit4;

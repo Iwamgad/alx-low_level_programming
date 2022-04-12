@@ -15,8 +15,7 @@ for (i = n; i >= 98; i--)
 {
 printf("%d", i);
 if (i != 98)
-putchar(',');
-putchar(' ');
+printf(", ");
 }
 }
 else
@@ -24,10 +23,9 @@ else
 for (i = n; i <= 98; i++)
 {
 printf("%d", i);
-if (i != 98)  
-putchar(',');
-putchar(' ');
+if (i != 98)
+printf(", ");
 }
 }
-putchar('\n');
+printf("\n");
 }

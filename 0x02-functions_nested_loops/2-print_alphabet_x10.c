@@ -13,7 +13,6 @@ for (ch = 'a'; ch <= 'z'; ch++)
 {
 _putchar(ch);
 }
-if (i != 10)
 _putchar('\n');
 i++;
 }

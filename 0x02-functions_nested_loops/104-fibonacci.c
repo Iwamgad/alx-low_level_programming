@@ -8,17 +8,17 @@
 int main(void)
 {
 int i = 0;
-long fibonacci;
-long fibo1 = 1;
-long fibo2 = 2;
-printf("%lu, ", fibo1);
-while (i < 96)
+double fibonacci;
+double fibo1 = 1;
+double fibo2 = 2;
+printf("%0.0lf, ", fibo1);
+while (i < 97)
 {
 fibonacci = fibo1 + fibo2;
 fibo1 = fibo2;
 fibo2 = fibonacci;
-printf("%lu", fibo1);
-if (i != 95)
+printf("%0.0lf", fibo1);
+if (i != 96)
 printf(", ");
 i++;
 }

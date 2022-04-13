@@ -11,7 +11,7 @@ int i = 0;
 long fibonacci;
 long fibo1 = 1;
 long fibo2 = 2;
-printf("%lu ", fibo1);
+printf("%lu, ", fibo1);
 while (i < 97)
 {
 fibonacci = fibo1 + fibo2;

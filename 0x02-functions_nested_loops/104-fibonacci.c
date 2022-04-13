@@ -11,13 +11,13 @@ int i = 0;
 double fibonacci;
 double fibo1 = 1;
 double fibo2 = 2;
-printf("%0.0lf, ", fibo1);
+printf("%0.0f, ", fibo1);
 while (i < 97)
 {
 fibonacci = fibo1 + fibo2;
 fibo1 = fibo2;
 fibo2 = fibonacci;
-printf("%0.0lf", fibo1);
+printf("%0.0f", fibo1);
 if (i != 96)
 printf(", ");
 i++;

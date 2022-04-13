@@ -18,7 +18,7 @@ fibonacci = fibo1 + fibo2;
 fibo1 = fibo2;
 fibo2 = fibonacci;
 printf("%lu", fibo1);
-if (i != 8)
+if (i != 96)
 printf(", ");
 i++;
 }

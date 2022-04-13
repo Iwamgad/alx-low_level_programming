@@ -12,13 +12,13 @@ long fibonacci;
 long fibo1 = 1;
 long fibo2 = 2;
 printf("%lu, ", fibo1);
-while (i < 97)
+while (i < 98)
 {
 fibonacci = fibo1 + fibo2;
 fibo1 = fibo2;
 fibo2 = fibonacci;
 printf("%lu", fibo1);
-if (i != 96)
+if (i != 97)
 printf(", ");
 i++;
 }

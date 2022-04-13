@@ -17,7 +17,9 @@ while (i < 97)
 fibonacci = fibo1 + fibo2;
 fibo1 = fibo2;
 fibo2 = fibonacci;
-printf("%lu ", fibo1);
+printf("%lu", fibo1);
+if (i != 8)
+printf(", ");
 i++;
 }
 printf("\n");

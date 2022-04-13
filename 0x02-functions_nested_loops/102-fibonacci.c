@@ -19,7 +19,7 @@ for (i = 0; i < 50; i++)
 {
 printf("%lu", a[i]);
 if (i != 49)
-printf(",");
+printf(", ");
 }
 printf("\n");
 return (0);

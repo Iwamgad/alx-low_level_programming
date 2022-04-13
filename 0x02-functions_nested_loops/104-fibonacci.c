@@ -8,9 +8,9 @@
 int main(void)
 {
 int i = 0;
-long fibonacci;
-long fibo1 = 1;
-long fibo2 = 2;
+unsigned long fibonacci;
+unsigned long fibo1 = 1;
+unsigned long fibo2 = 2;
 printf("%lu, ", fibo1);
 while (i < 98)
 {

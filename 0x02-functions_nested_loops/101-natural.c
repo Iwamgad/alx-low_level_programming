@@ -17,6 +17,6 @@ if (i % 3 == 0 || i % 5 == 0)
 sum += i;
 }
 }
-printf("The sum is: %d\n", sum);
+printf(sum);
 return (0);
 }

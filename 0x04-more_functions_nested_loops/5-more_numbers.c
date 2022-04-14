@@ -11,13 +11,13 @@ int i, k;
 int j = 0;
 while (j < 10)
 {
-for (j = 0; j <= 14; j++)
+for (i = 0; i <= 14; i++)
 {
-k = j;
+k = i;
 if (k > 9)
 {
 _putchar('1');
-k = j % 10;
+k = i % 10;
 }
 _putchar('0' + k);
 }

@@ -21,7 +21,7 @@ else
 {
 k = i % 10;
 _putchar('1');
-_putchar(k + '0');
+_putchar('0' + k);
 }
 }
 _putchar('\n');

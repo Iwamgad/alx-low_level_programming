@@ -13,13 +13,13 @@ while (j < 10)
 {
 for (j = 0; j <= 14; j++)
 {
-c = j;
-if (c > 9)
+k = j;
+if (k > 9)
 {
 _putchar('1');
-c = j % 10;
+k = j % 10;
 }
-_putchar('0' + c);
+_putchar('0' + k);
 }
 _putchar('\n');
 j++;

@@ -7,11 +7,6 @@
  */
 int _isupper(int c)
 {
-int i;
-for (i = 65; i < 92; i++)
-{
-if (c == i)
-return (1);
-}
-return (0);
+int k = (c > 64 && c < 91) ? 1 : 0;
+return (k);
 }

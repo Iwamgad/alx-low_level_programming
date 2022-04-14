@@ -7,8 +7,8 @@
  */
 int _isupper(int c)
 {
-char i;
-for (i = 'A'; i < 'Z'; i++)
+int i;
+for (i = 65; i < 92; i++)
 {
 if (c == i)
 return (1);

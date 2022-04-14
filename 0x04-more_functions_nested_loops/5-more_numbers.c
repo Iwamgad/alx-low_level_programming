@@ -11,18 +11,15 @@ int i, k;
 int j = 0;
 while (j < 10)
 {
-for (i = 0; i <= 14; i++)
+for (j = 0; j <= 14; j++)
 {
-if (i <= 9)
+c = j;
+if (c > 9)
 {
-_putchar(i + '0');
-}
-else
-{
-k = i % 10;
 _putchar('1');
-_putchar('0' + k);
+c = j % 10;
 }
+_putchar('0' + c);
 }
 _putchar('\n');
 j++;

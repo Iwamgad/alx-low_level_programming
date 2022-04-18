@@ -20,10 +20,10 @@ break;
 }
 i++;
 }
-j = size;
+j = size - 1;
 while (j >= 0)
 {
-_putchar(s[j]);
+if (j != 0) _putchar(s[j]);
 j--;
 }
 _putchar('\n');

@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+
 #include <time.h>
 
 /**
@@ -11,14 +11,24 @@
  */
 int main(void)
 {
-int i = 0;
-srand(time(NULL));
-char characters[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%&^*()";
-char password[14];
-for (i = 0; i < 14; i++)
+int sum = 2772;
+int n;
+srand(time(0));
+while (sum)
 {
-password[i] = characters[rand() % strlen(characters)];
-printf("%c", password[i]);
+n = rand() % 100;
+if (n <= 94)
+n += 32;
+else
+continue;
+if (sum - n == 0)
+{
+sum -= n;
+printf("%c", n);
+}
+else if (sum - n - 32 > 0)
+sum -= n;
+printf("%c", n);
 }
 return (0);
 }

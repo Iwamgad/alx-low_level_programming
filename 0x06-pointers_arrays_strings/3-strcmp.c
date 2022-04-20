@@ -32,11 +32,11 @@ for (j = 0; j < sizes1 && j < sizes2; j++)
 {
 if (s1[j] < s2[j])
 {
-return (-15);
+return (*s1 - *s2);
 }
 else if (s1[j] > s2[j])
 {
-return (15);
+return (*s1 - *s2);
 }
 else
 {

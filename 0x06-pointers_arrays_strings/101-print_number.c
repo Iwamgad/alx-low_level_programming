@@ -15,7 +15,7 @@ _putchar('0');
 }
 else if (n < 0)
 {
-while(num != 0)
+while (num != 0)
 {
 lastdigit = num % 10;
 rev = (rev * 10) + lastdigit;
@@ -26,12 +26,12 @@ while (rev != 0)
 {
 lastdigit = rev % 10;
 _putchar(lastdigit + '0');
-rev = rev /10;
+rev = rev / 10;
 }
 }
 else
 {
-while(num != 0)
+while (num != 0)
 {
 lastdigit = num % 10;
 rev = (rev * 10) + lastdigit;
@@ -41,7 +41,7 @@ while (rev != 0)
 {
 lastdigit = rev % 10;
 _putchar(lastdigit + '0');
-rev = rev /10;
+rev = rev / 10;
 }
 }
 }

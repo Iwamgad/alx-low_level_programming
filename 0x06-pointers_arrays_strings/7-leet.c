@@ -7,28 +7,21 @@
  */
 char *leet(char *s)
 {
-int i;
+char s1[] = {'A','E','O','T','L'};
+char s2[] = {'a','e','o','t','l'};
+char rep[] = {'4','3','0','7','1'};
+int i = 0, k = 0;
 for (i = 0; s[i] != '\0'; i++)
 {
-if (s[i] == 'a' || s[i] == 'A')
+k = 0;
+while (k < 5)
 {
-s[i] = '4';
+if (s[i] == s1[k] || s[i] == s2[k])
+{
+s[i] = rep[k];
+break;
 }
-else if (s[i] == 'e' || s[i] == 'E')
-{
-s[i] = '3';
-}
-else if (s[i] == 'o' || s[i] == 'O')
-{
-s[i] = '0';
-}
-else if (s[i] == 't' || s[i] == 'T')
-{
-s[i] = '7';
-}
-else if (s[i] == 'l' || s[i] == 'L')
-{
-s[i] = '1';
+k++;
 }
 }
 return (s);

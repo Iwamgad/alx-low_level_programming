@@ -7,9 +7,9 @@
  */
 char *leet(char *s)
 {
-char s1[] = {'A','E','O','T','L'};
-char s2[] = {'a','e','o','t','l'};
-char rep[] = {'4','3','0','7','1'};
+char s1[] = {'A', 'E', 'O', 'T', 'L'};
+char s2[] = {'a', 'e', 'o', 't', 'l'};
+char rep[] = {'4', '3', '0', '7', '1'};
 int i = 0, k = 0;
 for (i = 0; s[i] != '\0'; i++)
 {

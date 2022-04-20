@@ -8,40 +8,17 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-int sizes1, sizes2, i = 0, j = 0;
-while (i >= 0)
+while (*s1 != '\0' && *s2 != '\0' && (*s1 == *s2))
 {
-if (s1[i] == '\0')
-{
-sizes1 = i;
-break;
+s1++;
+s2++;
 }
-i++;
-}
-i = 0;
-while (i >= 0)
+if (*s1 == *s2)
 {
-if (s2[i] == '\0')
-{
-sizes2 = i;
-break;
-}
-i++;
-}
-for (j = 0; j < sizes1 - 1 && j < sizes2 - 1; j++)
-{
-if (s1[j] < s2[j])
-{
-return (*s1 - *s2);
-}
-else if (s1[j] > s2[j])
-{
-return (*s1 - *s2);
+return (0);
 }
 else
 {
-return (0);
+return (*s1 - *s2);
 }
-}
-return (0);
 }

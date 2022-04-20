@@ -28,7 +28,7 @@ break;
 }
 i++;
 }
-for (j = 0; j < sizes1 && j < sizes2; j++)
+for (j = 0; j < sizes1 - 1 && j < sizes2 - 1; j++)
 {
 if (s1[j] < s2[j])
 {

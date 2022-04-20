@@ -14,6 +14,8 @@ for (i = 0; str[i] != '\0'; i++)
 isLower = 0;
 for (j = 'a'; j <= 'z'; j++)
 {
+if (str[0] == j)
+str[0] -= 32;
 if ((str[i] == ' ' || str[i] == ',' || str[i] == '\t' ||
 str[i] == '\n' || str[i] == ';' || str[i] == '.' || str[i] == '!' ||
 str[i] == '?' || str[i] == '"' || str[i] == '(' || str[i] == ')' ||

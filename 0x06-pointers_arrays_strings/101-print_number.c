@@ -7,8 +7,8 @@
  */
 void print_number(int n)
 {
-int num = (n <= 0) ? -1 * n : n;
-int rev = 0, lastdigit = 0;
+unsigned int num = (n <= 0) ? -1 * n : n;
+unsigned int rev = 0, lastdigit = 0;
 if (n == 0)
 {
 _putchar('0');

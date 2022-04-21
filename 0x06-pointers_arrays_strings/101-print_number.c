@@ -7,27 +7,16 @@
  */
 void print_number(int n)
 {
-unsigned int num = (n <= 0) ? -1 * n : n;
-unsigned int rev = 0, lastdigit = 0;
-if (n == 0)
-{
-_putchar(num + '0');
-}
-else
-{
-while (num != 0)
-{
-lastdigit = num % 10;
-rev = (rev * 10) + lastdigit;
-num = num / 10;
-}
+unsigned int num;
+num = n;
 if (n < 0)
-_putchar('-');
-while (rev != 0)
 {
-lastdigit = rev % 10;
-_putchar(lastdigit + '0');
-rev = rev / 10;
+_putchar('-');
+num = -n;
 }
+if (num / 10 != 0)
+{
+print_number(num / 10);
 }
+_putchar((num % 10) + '0');
 }

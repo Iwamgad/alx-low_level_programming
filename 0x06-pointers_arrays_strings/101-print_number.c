@@ -11,7 +11,7 @@ int num = (n <= 0) ? -1 * n : n;
 int rev = 0, lastdigit = 0;
 if (n == 0)
 {
-_putchar('0');
+_putchar(num + '0');
 }
 else if (n < 0)
 {

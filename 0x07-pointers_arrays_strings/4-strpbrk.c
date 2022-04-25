@@ -30,7 +30,12 @@ char *_strpbrk(char *s, char *accept)
 		}
 	}
 	if (flag == 0)
-	    return (NULL);
-	s = &s[index];
+        {
+		return (NULL);
+        }
+        else
+        {
+		s = &s[index];
+	}
 	return (s);
 }

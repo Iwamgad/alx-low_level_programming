@@ -22,6 +22,6 @@ char *_strchr(char *s, char c)
 	}
 
 	s = &s[index];
-
+	return ('\0');
 	return (s);
 }

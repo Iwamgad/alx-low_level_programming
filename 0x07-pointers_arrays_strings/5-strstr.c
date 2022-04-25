@@ -11,11 +11,27 @@
 char *_strstr(char *haystack, char *needle)
 {
 	unsigned int flag, i, j, index;
-
-	for (i = 0; needle[i] > '\0'; i++)
+	char *retChar;
+	for (i = 0; needle[i] != '\0'; i++)
 	{
 		flag = 0;
-		for (j = 0; haystack[j] > '\0'; j++)
+		for (j = 0; haystack[j] != '\0'; j++)
+		{
+			if (needle[i] == haystack[j])
+			{
+				flag = 1;
+				break;
+			}
+		}
+		if (flag == 0)
+		{
+			return (0);
+		}
+	}
+	for (i = 0; needle[i] != '\0'; i++)
+	{
+		flag = 0;
+		for (j = 0; haystack[j] != '\0'; j++)
 		{
 			if (needle[i] == haystack[j])
 			{
@@ -26,9 +42,9 @@ char *_strstr(char *haystack, char *needle)
 		if (flag == 1)
 		{
 			index = j;
-			haystack = &haystack[index];
-			return (haystack);
+			retChar = &haystack[index];
+			break;
 		}
 	}
-	return (0);
+	return (retChar);
 }

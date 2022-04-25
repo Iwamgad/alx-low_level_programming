@@ -1,5 +1,6 @@
 #include "main.h"
-#include <stddef.h> 
+#include <stddef.h>
+
 /**
  * _strstr - locates a substring
  * @haystack: a pointer to a string
@@ -11,6 +12,7 @@
 char *_strstr(char *haystack, char *needle)
 {
 	unsigned int flag, i, j, index;
+	char *retChar;
 
 	for (i = 0; needle[i] != '\0'; i++)
 	{
@@ -35,7 +37,7 @@ char *_strstr(char *haystack, char *needle)
 	}
 	else
 	{
-		haystack = &haystack[index];
+		retChar = &haystack[index];
 	}
-	return (haystack);
+	return (retChar);
 }

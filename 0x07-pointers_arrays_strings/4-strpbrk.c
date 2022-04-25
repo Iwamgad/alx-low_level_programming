@@ -10,32 +10,19 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	unsigned int flag, index, i, j;
+	unsigned int i, j;
+	char *retChar;
 
-	for (i = 0; s[i] >= '0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		flag = 0;
 		for (j = 0; accept[j] != '\0'; j++)
 		{
 			if (s[i] == accept[j])
 			{
-				flag = 1;
-				break;
+				retChar = &s[i];
+				return (retChar);
 			}
 		}
-		if (flag == 1)
-		{
-			index = i;
-			break;
-		}
 	}
-	if (flag == 0)
-        {
-		return (NULL);
-        }
-        else
-        {
-		s = &s[index];
-	}
-	return (s);
+	return (0);
 }

@@ -10,18 +10,25 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	unsigned int i, j;
+	unsigned int flag, i, j, index;
 	char *retChar;
 
 	for (i = 0; needle[i] != '\0'; i++)
 	{
+		flag = 0;
 		for (j = 0; haystack[j] != '\0'; j++)
 		{
 			if (needle[i] == haystack[j])
 			{
-				retChar = &haystack[j];
-				return (retChar);
+				flag = 1;
+				break;
 			}
+		}
+		if (flag == 1)
+		{
+			index = j;
+			retChar = &haystack[index];
+			return (retChar);
 		}
 	}
 	return (0);

@@ -10,18 +10,14 @@
 
 char *_strchr(char *s, char c)
 {
-	unsigned int i, index;
+	unsigned int i;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == c)
 		{
-			index = i;
-			break;
+			return (s + i);
 		}
 	}
-
-	s = &s[index];
-	return ('\0');
-	return (s);
+	return (0);
 }

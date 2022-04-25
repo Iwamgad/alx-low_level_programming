@@ -13,10 +13,10 @@ char *_strstr(char *haystack, char *needle)
 	unsigned int flag, i, j, index;
 	char *retChar;
 
-	for (i = 0; needle[i] >= '\0'; i++)
+	for (i = 0; needle[i] > '\0'; i++)
 	{
 		flag = 0;
-		for (j = 0; haystack[j] >= '\0'; j++)
+		for (j = 0; haystack[j] > '\0'; j++)
 		{
 			if (needle[i] == haystack[j])
 			{

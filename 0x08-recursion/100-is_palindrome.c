@@ -33,12 +33,12 @@ int is_palindrome(char *s)
 }
 
 /**
- * checkPalindrom- checks if a string is a palindrome or not
+ * checkPalindrom - checks if a string is a palindrome or not
  * @s: string
  * @start: int moves from right to left
  * @end: int moves from left to right
  * @pair: int
- * returns 1 if a string is a palindrome and 0 if not
+ * Return: returns 1 if a string is a palindrome and 0 if not
  */
 
 int checkPalindrom(char *s, int start, int end, int pair)

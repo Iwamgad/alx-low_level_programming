@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <ctype.h>
 
 /**
@@ -11,38 +12,29 @@
 
 int main(int argc, char *argv[])
 {
-	int i, sum = 0, isDigit = 1;
+	int i, j, argLength, sum = 0;
 
 	if (argc < 3)
 	{
 		printf("%d\n", 0);
-		return (1);
 	}
 	else
 	{
 		for (i = 1; i < argc; i++)
 		{
-			isDigit = 1;
-			if (isdigit(*argv[i]) == 0)
-			{
-				isDigit = 0;
-				break;
-			}
-		}
-		if (isDigit == 0)
-		{
-			printf("%s\n", "Error");
-			return (1);
-		}
-		else
-		{
+			argLength = strlen(argv[i]);
 
-			for (i = 1; i < argc; i++)
+			for (j = 0; j < argLength; j++)
 			{
-				sum += atoi(argv[i]);
+				if (isdigit(*(argv[i] + j)) == 0)
+				{
+					printf("%s\n", "Error");
+					return (1);
+				}
 			}
-			printf("%d\n", sum);
+			sum += atoi(argv[i]);
 		}
+		printf("%d\n", sum);
 	}
 	return (0);
 }

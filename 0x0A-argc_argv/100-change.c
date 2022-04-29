@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <limits.h>
-#include <ctype.h>
+
 
 /**
  * main - prints the minimum number of coins to make change for an
@@ -14,8 +12,7 @@
 
 int main(int argc, char *argv[])
 {
-	unsigned long i;
-	int temp, rem, numOfCoins = 0, num;
+	int i, temp, rem, numOfCoins = 0, num;
 	int arr[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
@@ -35,7 +32,7 @@ int main(int argc, char *argv[])
 
 		while (rem != 0)
 		{
-			for (i = 0; i < (sizeof(arr) / 4); i++)
+			for (i = 0; i < 5; i++)
 			{
 				if (rem >= arr[i])
 				{

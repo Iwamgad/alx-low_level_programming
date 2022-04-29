@@ -24,12 +24,11 @@ int main(int argc, char *argv[])
 	{
 		printf("%d\n", 0);
 	}
-	else if (atoi(argv[1]) > 0)
+	else if (atoi(argv[1]) >= 0)
 	{
 
 		rem = atoi(argv[1]);
-		num = atoi(argv[1]);
-
+	
 		while (rem != 0)
 		{
 			for (i = 0; i < 5; i++)

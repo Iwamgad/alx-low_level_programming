@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
 			rem = rem % temp;
 			numOfCoins += num;
 		}
-		printf("%d\n", numOfCoins);
+		printf("%d", numOfCoins);
 	}
 	return (0);
 }

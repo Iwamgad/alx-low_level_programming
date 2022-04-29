@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 	{
 
 		rem = atoi(argv[1]);
-	
+
 		while (rem != 0)
 		{
 			for (i = 0; i < 5; i++)

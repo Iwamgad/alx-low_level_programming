@@ -43,6 +43,7 @@ char **strtow(char *str)
 	if (retWord == NULL)
 		return (NULL);
 	retWord[num - 1] = NULL;
+	i = 0;
 	while (str[i])
 	{
 		if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))

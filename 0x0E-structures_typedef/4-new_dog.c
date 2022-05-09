@@ -1,9 +1,8 @@
 #include <stdlib.h>
 #include "dog.h"
 
-int _strlen(char *str);
-char *_strcopy(char *dest, char *src);
-dog_t *new_dog(char *name, float age, char *owner);
+int stringLength(char *str);
+char *stringCopy(char *dest, char *src);
 
 /**
  * stringLength - Finds the length of a string.
@@ -56,10 +55,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	pDog = malloc(sizeof(dog_t));
 
-	if(pDog == NULL)
+	if (pDog == NULL)
 		return (NULL);
 	pDog->name = malloc(sizeof(char) * (stringLength(name) + 1));
-	if(pDog->name == NULL)
+	if (pDog->name == NULL)
 	{
 		free(pDog);
 		return (NULL);

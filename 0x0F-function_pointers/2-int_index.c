@@ -11,7 +11,7 @@
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int i, index;
+	int i, index, foundMatch = 0;
 
 	if (size <= 0)
 		return (-1);
@@ -21,10 +21,14 @@ int int_index(int *array, int size, int (*cmp)(int))
 		{
 			if (((*cmp)(*(array + i))) == 1)
 			{
+				foundMatch = 1;
 				index = i;
 				break;
 			}
 		}
 	}
-	return (index);
+	if (foundMatch != 1)
+		return (-1);
+	else
+		return (index);
 }

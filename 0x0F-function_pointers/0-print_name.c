@@ -1,3 +1,5 @@
+void (*f)(char *);
+
 /**
  * print_name - prints a name
  * @name: a pointer to a string

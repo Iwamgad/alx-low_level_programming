@@ -9,27 +9,27 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-    unsigned int retNum = 0, num, count = 0, k = 1;
-    const char *numChar = b;
+	unsigned int retNum = 0, num, count = 0, k = 1;
+	const char *numChar = b;
 
-    if (b == NULL)
-        return 0;
+	if (b == NULL)
+		return (0);
 
-    while (*numChar)
-    {
-        if (*numChar != '0' && *numChar != '1')
-            return 0;
-        count++;
-        numChar++;
-    }
+	while (*numChar)
+	{
+		if (*numChar != '0' && *numChar != '1')
+			return (0);
+		count++;
+		numChar++;
+	}
 
-    while (count > 0)
-    {
-        num = b[count - 1] - 48;
-        num = num * k;
-        retNum = retNum + num;
-        k *= 2;
-        count--;
-    }
-    return (retNum);
+	while (count > 0)
+	{
+		num = b[count - 1] - 48;
+		num = num * k;
+		retNum = retNum + num;
+		k *= 2;
+		count--;
+	}
+	return (retNum);
 }

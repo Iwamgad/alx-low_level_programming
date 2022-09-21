@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """
 This module calculates the perimeter of an island
 """

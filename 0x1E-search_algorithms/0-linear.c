@@ -11,28 +11,31 @@
  *         if array is NULL
  */
 
-int linear_search(int *array, size_t size, int value){
+int linear_search(int *array, size_t size, int value)
+{
 
 
-        int i, foundIndex = 0, retIndex;
+	int i, foundIndex = 0, retIndex;
 
-        if (array == NULL) return -1;
-
-
-        for (i = 0; i < ((int) size); i++){
-
-                printf("Value checked array[%d] = [%d]\n", i, array[i]);
-
-                if(array[i] == value){
-                        foundIndex = 1;
-                        retIndex = i;
-                        break;
-                }
-        }
-        if (foundIndex)
-            return retIndex;
-        else
-            return -1;
+	if (array == NULL)
+		return (-1);
 
 
+	for (i = 0; i < ((int) size); i++)
+	{
+
+		printf("Value checked array[%d] = [%d]\n", i, array[i]);
+
+		if (array[i] == value)
+		{
+			foundIndex = 1;
+			retIndex = i;
+			break;
+		}
+	}
+
+	if (foundIndex)
+		return (retIndex);
+	else
+		return (-1);
 }
